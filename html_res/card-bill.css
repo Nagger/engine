@@ -1,0 +1,436 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+.wrapper {
+	max-width: 890px;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+tr, td, th {
+    page-break-inside: avoid !important;
+}
+td div, th div{
+    page-break-inside: avoid;
+}
+body {
+	color: #000;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+td {
+	vertical-align: top;
+}
+.text-right {
+	text-align: right
+}
+.text-left {
+	text-align: left !important;
+}
+.wrapper {
+	width: 1024px;
+	margin: 50px auto
+}
+.header {
+	width: 100%
+}
+.header-left,
+.header-right {
+	width: 50%
+}
+.header-right {
+	text-align: right;
+	line-height: 1.5em;
+}
+
+
+
+/* Выписки по операциям по карте */
+#reportCard .tableTop {
+	width: 100%;
+	margin: 0px 0 47px;
+	color: #000;
+}
+#reportCard .tableTop .tableHeader {
+	color: #045597;
+}
+#reportCard .tableTop .balancePreEnd td {
+	padding: 8px 0 8px 16px;
+}
+#reportCard .tableTop .balancePreEnd td + td {
+	padding: 8px 10px 8px 10px;
+}
+#reportCard .tableTop .tableHeader td {
+	padding: 0;
+}
+#reportCard .tableTop .tableHeader h1 {
+	margin: 46px 0 11px;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 28px;
+}
+#reportCard .tableTop .tableHeader h2 {
+	font-size: 16px;
+	margin: 0 0 37px;
+}
+#reportCard .tableTop .tableHeader p {
+	padding: 0 0 38px;
+	font-size: 16px;
+}
+#reportCard .tableTop .tableHeader .comment {
+	font-size: 12px;
+	color: #000;
+	font-style: italic;
+	padding: 0 0 14px;
+	line-height: 14px;
+}
+#reportCard .tableTop td {
+	padding: 8px 0 8px 36px;
+	font-size: 12px;
+	border-bottom: 1px solid #c6c8d7
+}
+#reportCard .tableTop .tableTitle td {
+	vertical-align: middle;
+	font-weight: 600
+}
+#reportCard .tableTop td + td {
+	text-align: right;
+	padding: 8px 10px
+}
+#reportCard .tableTop .balanceBegin td,
+#reportCard .tableTop .balanceEnd td {
+	font-weight: 600;
+	padding: 10px 0 10px 16px;
+	font-size: 14px;
+}
+#reportCard .tableTop .balanceBegin td + td,
+#reportCard .tableTop .balanceEnd td + td {
+	padding: 10px
+}
+#reportCard .tablePercent {
+	width: 100%;
+	margin-bottom: 10px;
+}
+#reportCard .tablePercent .tableHeader td {
+	padding: 0
+}
+#reportCard .tablePercent .tableHeader h2 {
+	margin: 0 0 27px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 16px;
+	color: #045597;
+}
+#reportCard .tablePercent .tableTitle td {
+	padding: 12px 17px;
+	background: #eaeff2;
+	border-top: 1px solid #c6c8d7;
+	border-bottom: 1px solid #c6c8d7;
+	font-size: 12px;
+	line-height: 13px;
+}
+#reportCard .tablePercent td {
+	border-bottom: 1px solid #c6c8d7;
+	padding: 15px;
+}
+#reportCard .tablePercent .summ {
+	font-weight: 600;
+	font-size: 14px;
+	white-space: nowrap;
+	text-align: right;
+}
+#reportCard .tablePercent .summ + td.summ {
+	font-size: 17px;
+	white-space: nowrap;
+	text-align: right;
+}
+#reportCard .tablePercent td.descr {
+	text-transform: uppercase;
+}
+
+
+
+/* Выписка по Cash-back */
+#reportCashback .tableTop h1 {
+	color: #045597;
+	margin: 45px 0 0;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 30px;
+}
+#reportCashback .tableTop h2 {
+	font-size: 16px;
+	color: #045597;
+	margin: 6px 0 37px;
+}
+#reportCashback .tableTop .comment {
+	font-style: italic;
+	font-size: 12px;
+	margin: 0 0 13px;
+	line-height: 16px;
+}
+#reportCashback .tableTop .tableTitle td {
+	border-top: 1px solid #c6c8d7;
+	border-bottom: 1px solid #c6c8d7;
+	padding: 9px 15px;
+	font-size: 12px;
+	font-weight: 600;
+	vertical-align: middle;
+}
+#reportCashback .tableTop .tableTitle ~ tr td {
+	border-top: 1px solid #c6c8d7;
+	border-bottom: 1px solid #c6c8d7;
+	padding: 9px 15px;
+	font-size: 12px;
+}
+#reportCashback .tableList {
+	width: 100%;
+	margin: 61px 0 0;
+}
+#reportCashback .tableList td {
+	text-align: right;
+}
+#reportCashback .tableList .tableHeader td {
+	font-size: 18px;
+	font-weight: 600;
+	padding: 0 0 30px;
+}
+#reportCashback .tableList .tableTitle td {
+	background: #EAEFF2;
+	color: #045597;
+	vertical-align: middle;
+	text-align: right;
+}
+#reportCashback .tableList td:first-child {
+	text-align: left;
+}
+#reportCashback .tableList .tableHeader ~ tr td {
+	border-collapse: collapse;
+	border: 1px solid #C8C6DB;
+	padding: 18px 13px;
+}
+#reportCashback .tableList .tableTitle ~ tr td {
+	padding: 17px 12px
+}
+#reportCashback .tableList .lastRow td {
+	background: #EAEFF2;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 20px !important;
+	vertical-align: middle;
+}
+#reportCashback .tableList .lastRow td + td {
+	font-size: 22px;
+}
+.tablePercent .pechat,
+.tablePercent .stamp {
+	display: none;
+}
+.tablePercent tr:last-child .pechat,
+.tablePercent tr:last-child .stamp {
+	display: block
+}
+.pechat,
+.stamp {
+	position: relative;
+}
+.pechat img {
+    position: absolute;
+    bottom: -195px;
+    right: 30px;
+}
+.stamp img {
+	position: absolute;
+	bottom: -141px;
+	left: 30px;
+}
+.doc-bottom .pechat img {
+	bottom: -215px;
+}
+
+.tableCashBack {
+	margin:10px 0 0 0 !important;
+}
+
+.commision-report {
+	padding-left: 150px;
+}
+#reportCard .tableTop-commision tr td:first-child {
+	width: 300px;
+}
+#reportCard .tableTop-commision tr td:nth-child(2) {
+	width: auto;
+	text-align: left;
+	box-sizing: border-box;
+}
+#reportCard .tableTop-commision td {
+	padding: 8px 0 8px 8px;
+	font-size: 14px;
+	border-bottom: 1px solid #c6c8d7
+}
+.commission-info__list li {
+	padding-top: 5px;
+}
+.reference {
+	margin-top: 60px;
+	margin-left: 90px;
+	margin-right: 45px;
+}
+.header .logo,
+.header .title {
+	display: block;
+	vertical-align: middle;
+}
+.header .logo {
+	float: left;
+}
+.header .title {
+	float: right;
+}
+
+.header .title {
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 20px;
+
+}
+
+.reference .content {
+	color: #000000;
+	font-size: 14px;
+	margin-top: 110px;
+	line-height: 24px;
+}
+.content__client-info {
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.content__balance-info {
+	margin: 0;
+}
+.ib-print,
+.company-print {
+	display: inline-block;
+}
+.ib-print {
+	margin-left: 100px;
+	/*margin-top: 100px;*/
+}
+.company-print {
+	margin-left: 400px;
+}
+.content__title {
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 50px;
+	font-weight: bold;
+}
+.client-details {
+	font-size: 15px;
+	display: inline-block;
+}
+
+.requisites {
+	font-size: 12px;
+	line-height: 16px;
+	display: inline-block;
+}
+
+.date {
+	text-align: right;
+	margin-top: 50px;
+}
+
+.clearfix::after{
+	content:'';    
+	display:table;    
+	clear:both;
+}
+
+.transfer {
+	font-family: 'Calibri', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+.transfer__requisites table {
+	border-collapse: collapse;
+	border-spacing: 0;
+
+}
+.transfer__requisites table td {
+	border: 1px solid #000000;
+	height: 40px;
+	padding: 5px;
+	vertical-align: middle;
+}
+
+.transfer__requisites table tr td {
+	width: 370px;
+}
+
+.transfer__requisites table tr td:first-child {
+	width: 145px;
+}
+
+.transfer__title {
+	font-size: 24px;
+	color: rgb(31, 73, 125);
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.transfer__details {
+	margin-bottom: 30px;
+}
+
+.transfer__details div {
+	margin-bottom: 10px;
+}
